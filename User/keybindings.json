@@ -1,0 +1,13 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    { "key": "ctrl+a",  "command": "editor.action.selectAll",
+                           "when": "editorTextFocus && !inDebugRepl" },
+    { "key": "ctrl+v",  "command": "editor.action.clipboardPasteAction",
+                           "when": "editorTextFocus && !inDebugRepl && vim.mode == 'Insert Mode'" },
+    { "key": "ctrl+x",  "command": "editor.action.clipboardCutAction",
+                           "when": "editorTextFocus && !inDebugRepl" },
+    { "key": "ctrl+w",  "command": "workbench.action.closeActiveEditor",
+                           "when": "editorTextFocus && !inDebugRepl && vim.mode == 'Insert Mode'" },
+    { "key": "ctrl+c",  "command": "editor.action.clipboardCopyAction",
+                           "when": "editorTextFocus && !inDebugRepl && vim.mode != 'Insert Mode'" }
+]

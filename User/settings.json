@@ -1,0 +1,20 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+    // Editor setting
+    "editor.renderWhitespace" : "boundary",
+
+    // Python setting
+    "[python]": {
+        "editor.tabSize" : 2
+    },
+
+    // VSCodeVim
+    "vim.useSystemClipboard" : true,
+    "vim.useCtrlKeys" : true,
+    "vim.insertModeKeyBindings" : [
+        {
+            "before" : ["j", "k"],
+            "after" : ["<Esc>"]
+        }
+    ]
+}
