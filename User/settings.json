@@ -21,6 +21,10 @@
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
         {
+            "before" : [";"],
+            "after" : [":"]
+        },
+        {
             "before" : ["Z", "Z"],
             "after" : [],
             "commands" : [
