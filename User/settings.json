@@ -5,16 +5,52 @@
 
     // Python setting
     "[python]": {
-        "editor.tabSize" : 2
+        "editor.tabSize" : 4
     },
 
     // VSCodeVim
-    "vim.useSystemClipboard" : true,
     "vim.useCtrlKeys" : true,
+    // "vim.handleKeys" : {
+    // },
+    "vim.useSystemClipboard" : true,
     "vim.insertModeKeyBindings" : [
         {
             "before" : ["j", "k"],
             "after" : ["<Esc>"]
         }
-    ]
+    ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before" : ["Z", "Z"],
+            "after" : [],
+            "commands" : [
+                {
+                    "command" : "workbench.action.files.save",
+                    "args" : []
+                },
+                {
+                    "command" : "workbench.action.closeActiveEditor",
+                    "args" : []
+                }
+            ]
+        },
+        {
+            "before" : ["leader", "w"],
+            "after" : [],
+            "commands" : [
+                {
+                    "command" : "workbench.action.files.save",
+                    "args" : []
+                }
+            ]
+        }
+    ],
+    "vim.hlsearch": true,
+    "vim.leader": "\\",
+    "[cpp]": {
+        "editor.quickSuggestions": false
+    },
+    "[c]": {
+        "editor.quickSuggestions": false
+    }
 }

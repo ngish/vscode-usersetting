@@ -1,13 +1,44 @@
-// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+// Place your key bindings in this file to overwrite the defaults
 [
-    { "key": "ctrl+a",  "command": "editor.action.selectAll",
-                           "when": "editorTextFocus && !inDebugRepl" },
-    { "key": "ctrl+v",  "command": "editor.action.clipboardPasteAction",
-                           "when": "editorTextFocus && !inDebugRepl && vim.mode == 'Insert Mode'" },
-    { "key": "ctrl+x",  "command": "editor.action.clipboardCutAction",
-                           "when": "editorTextFocus && !inDebugRepl" },
-    { "key": "ctrl+w",  "command": "workbench.action.closeActiveEditor",
-                           "when": "editorTextFocus && !inDebugRepl && vim.mode == 'Insert Mode'" },
-    { "key": "ctrl+c",  "command": "editor.action.clipboardCopyAction",
-                           "when": "editorTextFocus && !inDebugRepl && vim.mode != 'Insert Mode'" }
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "editor.action.selectAll",
+        "when": "editorTextFocus && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus && !inDebugRepl && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus && !inDebugRepl && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus && !inDebugRepl && vim.mode != 'Insert'"
+    }
 ]
