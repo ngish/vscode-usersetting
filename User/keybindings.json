@@ -33,8 +33,7 @@
     },
     {
         "key": "ctrl+w",
-        "command": "workbench.action.closeActiveEditor",
-        "when": "editorTextFocus && !inDebugRepl && vim.mode == 'Insert'"
+        "command": "workbench.action.closeActiveEditor"
     },
     {
         "key": "ctrl+c",

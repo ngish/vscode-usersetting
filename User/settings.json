@@ -1,60 +1,61 @@
-// 既定の設定を上書きするには、このファイル内に設定を挿入します
 {
-    // Editor setting
-    "editor.renderWhitespace" : "boundary",
+    "workbench.sideBar.location": "left",
 
-    // Python setting
-    "[python]": {
-        "editor.tabSize" : 4
-    },
+    // Clang
+    "clang.executable": "clang++-3.7",
 
-    // VSCodeVim
-    "vim.useCtrlKeys" : true,
-    // "vim.handleKeys" : {
-    // },
-    "vim.useSystemClipboard" : true,
-    "vim.insertModeKeyBindings" : [
-        {
-            "before" : ["j", "k"],
-            "after" : ["<Esc>"]
-        }
-    ],
-    "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "before" : [";"],
-            "after" : [":"]
-        },
-        {
-            "before" : ["Z", "Z"],
-            "after" : [],
-            "commands" : [
-                {
-                    "command" : "workbench.action.files.save",
-                    "args" : []
-                },
-                {
-                    "command" : "workbench.action.closeActiveEditor",
-                    "args" : []
-                }
-            ]
-        },
-        {
-            "before" : ["leader", "w"],
-            "after" : [],
-            "commands" : [
-                {
-                    "command" : "workbench.action.files.save",
-                    "args" : []
-                }
-            ]
-        }
-    ],
+    // Auto-Completion
+    "C_Cpp.autocomplete": "Disabled",
+    
+    // For VSCodeVim
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    "vim.leader": "\\",
-    "[cpp]": {
-        "editor.quickSuggestions": false
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.otherModesKeyBindings": [
+        {
+            "before": ["leader", "w"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-f>" : false,
+        "<C-a>" : false,
+        "<C-\\>" : false,
+        "<C-.>" : false
     },
-    "[c]": {
-        "editor.quickSuggestions": false
-    }
+    "window.zoomLevel": 0,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "vim.disableAnnoyingNeovimMessage": true,
+    // Integrated terminal
+    // "terminal.integrated.shell.windows": "c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-NoExit",
+        "-File",
+        "g:\\os\\src\\utilities\\razzle.ps1",
+        "amd64",
+        "fre",
+        "no_opt"
+    ],
+    "extensions.ignoreRecommendations": false,
+    "editor.renderWhitespace": "all",
+    // Git setting
+    "git.autofetch": false,
+    "git.enabled": false
 }
